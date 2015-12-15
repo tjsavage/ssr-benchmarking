@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script>
+    window.onload = function() {
+      var container = document.getElementById("container");
+      for(var i = 0; i < 2000; i++) {
+        var d = document.createElement('div');
+        var h = document.createElement('h1');
+        h.appendChild(document.createTextNode('Title'));
+        var p = document.createElement('p');
+        var t = document.createTextNode('Hi there I am a paragraph.');
+        p.appendChild(t);
+        container.appendChild(p);
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="container"></div>
+</body>
